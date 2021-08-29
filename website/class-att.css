@@ -1,0 +1,242 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    list-style: none;
+    margin: 0;
+    outline: none;
+    padding: 0;
+  }
+  
+/* Add a black background color to the top navigation */
+.topnav {
+    background-color: #333;
+    overflow: hidden;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 93%;
+	z-index: 1;
+  }
+  
+  /* Style the links inside the navigation bar */
+.topnav a {
+    float: left;
+    display: block;
+    color: #ddd;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    margin-top: 10px;
+}
+  
+  /* Change the color of links on hover */
+.topnav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+a {
+    text-decoration: none;
+}
+  
+body, html {
+    height: 100%;
+  }
+  
+body {
+    background-image: url("background.jpg");
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+    font-family: 'Roboto', sans-serif;
+  }
+  
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-content: space-between;
+    max-width: 100%;
+    margin: 0 auto;
+    width: 50%;
+
+}
+
+.flex-container > div {
+    justify-content: center;
+    padding: 20px;
+    font-size: 14px;
+    align-items: center;
+}
+
+#customers {
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    border-collapse: collapse;
+    flex-wrap: wrap;
+    position: absolute;
+    width: 50%;
+    margin-top: 500px;
+  }
+  
+#customers td, #customers th {
+    border: 1px solid black;
+    padding: 2px;
+    background-color: rgb(232, 229, 229);
+    text-align: center;
+    height: 40px;
+}
+  
+#customers th {
+    padding-top: 1px;
+    padding-bottom: 1px;
+    text-align: center;
+    background-color:  #4297cf;
+    color: white;
+    text-align: center;
+}
+
+#customers tr:hover {color: DodgerBlue;}
+
+/*the container must be positioned relative:*/
+.custom-select {
+position: relative;
+font-family: Arial;
+}
+
+/*style the arrow inside the select element:*/
+.select-selected:after {
+position: absolute;
+content: "";
+top: 14px;
+right: 10px;
+width: 0;
+height: 0;
+border: 6px solid transparent;
+border-color: #fff transparent transparent transparent;
+}
+
+/*point the arrow upwards when the select box is open (active):*/
+.select-selected.select-arrow-active:after {
+border-color: transparent transparent #fff transparent;
+top: 7px;
+}
+
+/*style the items (options), including the selected item:*/
+.select-items div,.select-selected {
+color: #ffffff;
+padding: 8px 16px;
+border: 1px solid transparent;
+border-color: transparent transparent rgba(0, 0, 0, 0.1) transparent;
+cursor: pointer;
+user-select: none;
+}
+
+/*style items (options):*/
+.select-items {
+position: absolute;
+background-color: DodgerBlue;
+top: 100%;
+left: 0;
+right: 0;
+z-index: 99;
+}
+
+/*hide the items when the select box is closed:*/
+.select-hide {
+display: none;
+}
+
+.select-items div:hover, .same-as-selected {
+background-color: rgba(0, 0, 0, 0.1);
+}
+
+/* Calendar */
+* {box-sizing: border-box;}
+ul {list-style-type: none;}
+body {font-family: Verdana, sans-serif;}
+
+.month {
+  margin-top: 100px;
+  margin-left: 25%;
+  padding: 30px 25px;
+  width: 50%;
+  background:  #4297cf;
+  text-align: center;
+}
+
+.month ul {
+  margin: 0;
+  padding: 0;
+}
+
+.month ul li {
+  color: white;
+  font-size: 20px;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+
+.month .prev {
+  float: left;
+  padding-top: 10px;
+}
+
+.month .next {
+  float: right;
+  padding-top: 10px;
+}
+
+.weekdays {
+  margin: 0;
+  margin-left: 25%;
+  margin-right: 25%;
+  padding: 10px 0;
+  background-color: #ddd;
+}
+
+.weekdays li {
+  display: inline-block;
+  width: 13.6%;
+  color: #666;
+  text-align: center;
+}
+
+.days {
+  padding: 10px 0;
+  background: #eee;
+  margin: 0;
+  margin-left: 25%;
+  margin-right: 25%;
+}
+
+.days li {
+  list-style-type: none;
+  display: inline-block;
+  width: 13.6%;
+  text-align: center;
+  margin-bottom: 5px;
+  font-size:12px;
+  color: #777;
+}
+
+.days li .active {
+  padding: 5px;
+  background:  #4297cf;
+  color: white !important
+}
+
+/* Add media queries for smaller screens */
+@media screen and (max-width:720px) {
+  .weekdays li, .days li {width: 13.1%;}
+}
+
+@media screen and (max-width: 420px) {
+  .weekdays li, .days li {width: 12.5%;}
+  .days li .active {padding: 2px;}
+}
+
+@media screen and (max-width: 290px) {
+  .weekdays li, .days li {width: 12.2%;}
+}

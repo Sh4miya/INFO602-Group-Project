@@ -1,0 +1,173 @@
+<head>
+
+     <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900&display=swap" rel="stylesheet">
+    <!-- Bootstrap CSS -->
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css'>
+    <!-- Font Awesome CSS -->
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css'>
+
+    <title>Staff Login</title>
+</head>
+
+<body>
+    <style>
+
+body {
+    background: #67B26F;  /* fallback for old browsers */
+    background-image: url("background.jpg");
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    color: #000;
+}
+
+.topnav {
+    background-color: #333;
+    overflow: hidden;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 93%;
+	  z-index: 1;
+}
+  
+  /* Style the links inside the navigation bar */
+.topnav a {
+    float: left;
+    display: block;
+    color: #ddd;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 16px;
+    margin-top: 10px;
+}
+  
+  /* Change the color of links on hover */
+.topnav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+a {
+    text-decoration: none;
+}
+
+.student-profile .card {
+    border-radius: 10px;
+    top: 100px;
+}
+
+.student-profile .card .card-header .profile_img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    margin: 10px auto;
+    border: 10px solid #4297cf;
+    border-radius: 50%;
+}
+
+    .student-profile .card h3 {
+        font-size: 20px;
+        font-weight: 700;
+    }
+
+    .student-profile .card p {
+        font-size: 16px;
+        color: #000;
+    }
+
+    .student-profile .table th,
+    .student-profile .table td {
+        font-size: 14px;
+        padding: 5px 10px;
+        color: #000;
+    }
+
+    </style>
+
+<div class="topnav">
+    <a class="active" href="home.html">Home</a>
+    <a href="attendance.html">Class Attendance</a>
+    <a href="staff-profile.html">Profile</a>
+    <a href="home.html">Sign Out</a>
+</div>
+
+<div class="student-profile py-4">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-4">
+         <div class="card shadow-sm">
+            <div class="card-header bg-transparent text-center">
+              <img class="profile_img" src="dav.jpg" alt="staff dp">
+              <h3>Davey</h3>
+            </div>
+            <div class="card-body">
+              <p class="mb-0"><strong class="pr-1">Staff ID:</strong>DAV0001</p>
+
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-8">
+          <div class="card shadow-sm">
+            <div class="card-header bg-transparent border-0">
+              <h3 class="mb-0"><i class="far fa-clone pr-1"></i>Your Information</h3>
+            </div>
+            <div class="card-body pt-0">
+              <table class="table table-bordered">
+                <tr>
+                  <th width="30%">Full Name</th>
+                  <td width="2%">:</td>
+                  <td>Davey</td>
+                </tr>
+                <tr>
+                  <th width="30%">E-mail</th>
+                  <td width="2%">:</td>
+                  <td>zumbwdav@hotmail.com</td>
+                </tr>
+                <tr>
+                  <th width="30%">Gender</th>
+                  <td width="2%">:</td>
+                  <td>Male</td>
+                </tr>
+                <tr>
+                  <th width="30%">Date of Birth</th>
+                  <td width="2%">:</td>
+                  <td>04/08/1986</td>
+                </tr>
+              </table>
+            </div>
+          </div>
+            <div style="height: 26px"></div>
+          <div class="card shadow-sm">
+            <div class="card-header bg-transparent border-0">
+              <h3 class="mb-0"><i class="far fa-clone pr-1"></i>Upcoming classes</h3>
+            </div>
+            <div class="card-body pt-0">
+                <table class="table table-bordered">
+                    <tr>
+                        <th width="%20">29/08/2021</th>
+                        <td width="2%">:</td>
+                        <td>Zumba Lo-Fi</td>
+                    </tr>
+                    <tr>
+                      <th></th>
+                      <td></td>
+                      <td>Zumba Boogie Nights</td>
+                    </tr>
+                    <tr>
+                        <th width="%20">31/08/2021</th>
+                        <td width="2%">:</td>
+                        <td>Zumba Heat</td>
+                    </tr>
+                </table>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</body>
